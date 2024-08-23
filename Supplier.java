@@ -1,10 +1,24 @@
 package markersharksassessement;
 
+@Entity
 public class Supplier {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    private Long supplierId;
+    
+    private String companyName;
+    private String website;
+    private String location;
+    private String natureOfBusiness;
+    
+    @ElementCollection
+    private List<String> manufacturingProcesses;
+    
+}
 
-	}
+
+	
 
 }
